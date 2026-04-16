@@ -3,44 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manan's Portfolio</title>
+  <title>Aditya Rathore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">Manan</a>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section class="hero">
 
-  <!-- Hero Section -->
-  <section class="hero" id="about">
-    <div class="hero-content">
-      <p class="hero-greeting">Hello, I'm</p>
-      <h1 class="hero-name">Manan</h1>
-      <h2 class="hero-title">Full-Stack Developer & Designer</h2>
-      <p class="hero-bio">
-        I build clean, performant web applications with a focus on great user
-        experiences. Passionate about turning ideas into products that people
-        love to use.
-      </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+    <!--
+      Replace the src below with your actual video file.
+      The dark burgundy background acts as a fallback if no video is present.
+    -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="hero.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+
+    <!-- Navbar — centered at top -->
+    <header class="navbar">
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Case Studies</a>
+        <a href="#ai">AI Generations</a>
+      </nav>
+    </header>
+
+    <!-- Name — fades in after 2 s -->
+    <h1 class="hero-name">ADITYA RATHORE</h1>
+
+  </section>
+
+  <!-- ═══════════════════════ GALLERY ═══════════════════════ -->
+  <section class="gallery" id="gallery">
+
+    <!-- Column 1 — scrolls upward -->
+    <div class="ticker-col">
+      <div class="ticker-track up">
+        <!-- 6 unique images -->
+        <div class="ticker-img" style="background:linear-gradient(160deg,#3b0a1e,#7c1f3f)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#f0b8c8,#d45f7a)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#1a1a2e,#2d2d5e)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#fde0e8,#f58aa8)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#2d0d1e,#6b1f40)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#e8b4c4,#c45070)"></div>
+        <!-- duplicated for seamless loop -->
+        <div class="ticker-img" style="background:linear-gradient(160deg,#3b0a1e,#7c1f3f)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#f0b8c8,#d45f7a)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#1a1a2e,#2d2d5e)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#fde0e8,#f58aa8)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#2d0d1e,#6b1f40)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#e8b4c4,#c45070)"></div>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="avatar-ring">
-        <div class="avatar-placeholder">M</div>
+
+    <!-- Column 2 — scrolls downward -->
+    <div class="ticker-col">
+      <div class="ticker-track down">
+        <!-- 6 unique images -->
+        <div class="ticker-img" style="background:linear-gradient(160deg,#0d1f3a,#1a3a6e)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#f5dfc0,#e0a860)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#1e0a2e,#4a1a6b)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#fff0e0,#ffc880)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#0a1e14,#1a4a2e)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#d0e8d8,#80c89a)"></div>
+        <!-- duplicated for seamless loop -->
+        <div class="ticker-img" style="background:linear-gradient(160deg,#0d1f3a,#1a3a6e)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#f5dfc0,#e0a860)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#1e0a2e,#4a1a6b)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#fff0e0,#ffc880)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#0a1e14,#1a4a2e)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#d0e8d8,#80c89a)"></div>
       </div>
     </div>
+
+    <!-- Column 3 — scrolls upward, offset start for visual variety -->
+    <div class="ticker-col">
+      <div class="ticker-track up offset">
+        <!-- 6 unique images -->
+        <div class="ticker-img" style="background:linear-gradient(160deg,#3a1400,#7a3000)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#ffd8b0,#ffaa60)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#1e1e3a,#3a3a70)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#fff5e0,#ffd898)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#2e0a3a,#6a1a7a)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#f0d8f8,#d090e8)"></div>
+        <!-- duplicated for seamless loop -->
+        <div class="ticker-img" style="background:linear-gradient(160deg,#3a1400,#7a3000)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#ffd8b0,#ffaa60)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#1e1e3a,#3a3a70)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#fff5e0,#ffd898)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#2e0a3a,#6a1a7a)"></div>
+        <div class="ticker-img" style="background:linear-gradient(160deg,#f0d8f8,#d090e8)"></div>
+      </div>
+    </div>
+
   </section>
 
 </body>
